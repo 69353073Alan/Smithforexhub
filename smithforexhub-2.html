@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmithForexHub | Learn Forex</title>
+<style>
+:root{--bg:#0b1220;--panel:#121d30;--panel2:#17243a;--text:#edf3ff;--muted:#9aabc4;--gold:#f2bd4b;--green:#38c98a;--red:#ff7777}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px Arial,sans-serif}
+header{padding:22px 18px;background:#101a2b;border-bottom:1px solid #293851;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{font-size:22px;font-weight:800;color:var(--gold)}.tag{color:var(--muted);font-size:12px;margin-top:5px}
+nav{display:flex;gap:8px;flex-wrap:wrap}button,.btn{border:0;border-radius:9px;padding:10px 13px;background:var(--panel2);color:var(--text);cursor:pointer}
+button.active,button.primary{background:var(--gold);color:#171717;font-weight:700}
+main{max-width:1100px;margin:auto;padding:20px 16px}.notice{background:#302818;border:1px solid #705724;color:#ffe4a6;padding:12px;border-radius:10px;line-height:1.5;margin-bottom:18px}
+h1{font-size:26px;margin:8px 0}h2{font-size:19px;margin:0 0 12px}.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:13px;margin:16px 0}
+.card{background:var(--panel);border:1px solid #263650;border-radius:13px;padding:17px}
+.big{font-size:24px;font-weight:800;margin:8px 0}.gold{color:var(--gold)}.green{color:var(--green)}
+table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:11px 8px;border-bottom:1px solid #293851}th{color:var(--muted);font-size:12px}
+section{display:none}section.show{display:block}.lesson{padding:14px;background:var(--panel2);border-radius:10px;margin:9px 0}
+input{width:100%;padding:12px;border-radius:8px;border:1px solid #34445e;background:#0c1525;color:white;margin:7px 0 12px}
+footer{text-align:center;padding:25px;color:var(--muted);font-size:12px}
+.small{font-size:12px;color:var(--muted);line-height:1.5}
+</style>
+</head>
+<body>
+<header>
+ <div><div class="brand">SMITHFOREXHUB</div><div class="tag">Learn the market. Practise with discipline.</div></div>
+ <nav>
+  <button class="active" onclick="showTab('home',this)">Dashboard</button>
+  <button onclick="showTab('learn',this)">Learn Forex</button>
+  <button onclick="showTab('pairs',this)">Currency pairs</button>
+  <button onclick="showTab('tools',this)">Tools</button>
+  <button onclick="showTab('mentorship',this)">Mentorship</button>
+ </nav>
+</header>
+<main>
+<div class="notice"><b>Education-only demo:</b> This site uses sample data. It does not execute trades, connect to a broker, accept deposits, or process subscriptions. Forex involves substantial risk; practise with a simulator and learn before making financial decisions.</div>
+<section id="home" class="show">
+ <h1>Welcome to your learning dashboard</h1><p class="muted">Build your forex knowledge one lesson at a time.</p>
+ <div class="grid">
+  <div class="card"><div class="muted">Learning progress</div><div class="big gold">0%</div><div class="small">Start a lesson to track your progress.</div></div>
+  <div class="card"><div class="muted">Practice account</div><div class="big">DEMO</div><div class="small">No real funds or live orders.</div></div>
+  <div class="card"><div class="muted">Today's focus</div><div class="big">Risk basics</div><div class="small">Understand risk before studying strategies.</div></div>
+ </div>
+ <div class="card"><h2>Getting started</h2><ol><li>Learn what currency pairs are.</li><li>Understand pips, spreads and leverage.</li><li>Practise on a demo account only.</li><li>Keep a learning journal and review mistakes.</li></ol></div>
+</section>
+<section id="learn">
+ <h1>Forex learning academy</h1><p class="muted">Beginner-friendly learning topics.</p>
+ <div class="lesson"><b>01 — What is forex?</b><p class="small">Forex is the global market where currencies are exchanged. Prices are quoted in pairs, such as EUR/USD.</p></div>
+ <div class="lesson"><b>02 — Currency pairs</b><p class="small">The first currency is the base currency; the second is the quote currency. A quote shows how much of the quote currency is needed for one unit of the base currency.</p></div>
+ <div class="lesson"><b>03 — Pips and spreads</b><p class="small">A pip is a standard unit used to describe many exchange-rate movements. The spread is the difference between a quoted buy price and sell price.</p></div>
+ <div class="lesson"><b>04 — Risk management</b><p class="small">Leverage can magnify both gains and losses. Never risk money you cannot afford to lose; a demo environment is best for learning.</p></div>
+ <div class="lesson"><b>05 — Trading psychology</b><p class="small">Patience, planning and keeping records are important. Avoid impulsive decisions and promises of guaranteed profits.</p></div>
+</section>
+<section id="pairs">
+ <h1>Currency pairs</h1><p class="muted">Illustrative examples only — not live market prices.</p>
+ <div class="card"><table><thead><tr><th>Pair</th><th>Description</th><th>Sample quote</th></tr></thead><tbody>
+ <tr><td>EUR/USD</td><td>Euro / US dollar</td><td>1.0800</td></tr><tr><td>GBP/USD</td><td>Pound / US dollar</td><td>1.2700</td></tr><tr><td>USD/JPY</td><td>US dollar / Japanese yen</td><td>150.00</td></tr><tr><td>USD/CHF</td><td>US dollar / Swiss franc</td><td>0.8900</td></tr><tr><td>AUD/USD</td><td>Australian dollar / US dollar</td><td>0.6600</td></tr><tr><td>USD/CAD</td><td>US dollar / Canadian dollar</td><td>1.3500</td></tr>
+ </tbody></table></div>
+</section>
+<section id="tools">
+ <h1>Forex learning tools</h1><div class="card">
+ <h2>Illustrative pip-value practice calculator</h2><p class="small">A simplified learning exercise for a standard 100,000-unit lot in a USD-quoted pair. Not a broker calculation.</p>
+ <label>Position size in units</label><input id="units" type="number" min="0" value="10000">
+ <label>Price movement in pips</label><input id="pips" type="number" value="10">
+ <button class="primary" onclick="calculate()">Calculate sample movement</button>
+ <div class="big gold" id="result">Estimated sample: $10.00</div>
+ <p class="small">For many USD-quoted pairs, the simplified estimate is units × 0.0001 × pip movement. Actual values vary by pair, account currency and contract specifications.</p>
+ </div>
+ <div class="card" style="margin-top:14px"><h2>Trading journal template</h2><p class="small">Record the date, what you studied, your demo-practice observation, and what you learned. Do not enter private account passwords.</p></div>
+</section>
+<section id="mentorship">
+ <h1>Mentorship information</h1>
+ <div class="card"><h2>Learn with a mentor</h2><p>Use this section to review the topics a qualified mentor may teach: market basics, chart literacy, risk awareness, trading psychology and demo-practice reviews.</p>
+ <p><b>Weekly plan:</b> 7-day learning schedule.</p><p><b>Monthly plan:</b> 4-week learning programme.</p>
+ <p class="small">No payment or subscription checkout is enabled on this demo website. Verify any mentor's qualifications and discuss purchases with a parent or trusted adult.</p></div>
+</section>
+</main>
+<footer>SMITHFOREXHUB · Educational demonstration · Sample data only</footer>
+<script>
+function showTab(id,btn){document.querySelectorAll('main section').forEach(s=>s.classList.remove('show'));document.getElementById(id).classList.add('show');document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));btn.classList.add('active')}
+function calculate(){const u=Math.max(0,Number(document.getElementById('units').value)||0);const p=Number(document.getElementById('pips').value)||0;document.getElementById('result').textContent='Estimated sample: $'+(u*0.0001*p).toFixed(2)}
+</script>
+</body>
+</html>
